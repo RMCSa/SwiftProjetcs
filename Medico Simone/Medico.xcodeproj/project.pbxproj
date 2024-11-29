@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC21458D2CA48A9800D222B1 /* MedicoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC21458C2CA48A9800D222B1 /* MedicoApp.swift */; };
+		FC21458F2CA48A9800D222B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC21458E2CA48A9800D222B1 /* ContentView.swift */; };
+		FC2145912CA48A9900D222B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2145902CA48A9900D222B1 /* Assets.xcassets */; };
+		FC2145942CA48A9900D222B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2145932CA48A9900D222B1 /* Preview Assets.xcassets */; };
+		FC21459B2CA48B1B00D222B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC21459A2CA48B1B00D222B1 /* HomeView.swift */; };
+		FC21459F2CA4903500D222B1 /* SpecialistCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC21459E2CA4903500D222B1 /* SpecialistCardView.swift */; };
+		FC2145A12CA4970C00D222B1 /* Specialist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2145A02CA4970C00D222B1 /* Specialist.swift */; };
+		FC2145A32CA49D1400D222B1 /* doctor.json in Resources */ = {isa = PBXBuildFile; fileRef = FC2145A22CA49D1400D222B1 /* doctor.json */; };
+		FCCD1F172CB6F68B00758A0B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCD1F162CB6F68B00758A0B /* ButtonView.swift */; };
+		FCCD1F1B2CB7041500758A0B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCD1F1A2CB7041500758A0B /* WebService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC2145892CA48A9800D222B1 /* Medico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC21458C2CA48A9800D222B1 /* MedicoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicoApp.swift; sourceTree = "<group>"; };
+		FC21458E2CA48A9800D222B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC2145902CA48A9900D222B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC2145932CA48A9900D222B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC21459A2CA48B1B00D222B1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FC21459E2CA4903500D222B1 /* SpecialistCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistCardView.swift; sourceTree = "<group>"; };
+		FC2145A02CA4970C00D222B1 /* Specialist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specialist.swift; sourceTree = "<group>"; };
+		FC2145A22CA49D1400D222B1 /* doctor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doctor.json; sourceTree = "<group>"; };
+		FCCD1F162CB6F68B00758A0B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FCCD1F1A2CB7041500758A0B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC2145862CA48A9800D222B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC2145802CA48A9800D222B1 = {
+			isa = PBXGroup;
+			children = (
+				FC21458B2CA48A9800D222B1 /* Medico */,
+				FC21458A2CA48A9800D222B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC21458A2CA48A9800D222B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC2145892CA48A9800D222B1 /* Medico.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC21458B2CA48A9800D222B1 /* Medico */ = {
+			isa = PBXGroup;
+			children = (
+				FC21458C2CA48A9800D222B1 /* MedicoApp.swift */,
+				FC2145A52CA49E3400D222B1 /* Model */,
+				FC2145A42CA49DFD00D222B1 /* View */,
+				FCCD1F192CB7033400758A0B /* Service */,
+				FC2145902CA48A9900D222B1 /* Assets.xcassets */,
+				FC2145922CA48A9900D222B1 /* Preview Content */,
+			);
+			path = Medico;
+			sourceTree = "<group>";
+		};
+		FC2145922CA48A9900D222B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FC2145932CA48A9900D222B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC2145A42CA49DFD00D222B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCCD1F182CB702D600758A0B /* component */,
+				FC21459A2CA48B1B00D222B1 /* HomeView.swift */,
+				FC21458E2CA48A9800D222B1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC2145A52CA49E3400D222B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC2145A02CA4970C00D222B1 /* Specialist.swift */,
+				FC2145A22CA49D1400D222B1 /* doctor.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCCD1F182CB702D600758A0B /* component */ = {
+			isa = PBXGroup;
+			children = (
+				FCCD1F162CB6F68B00758A0B /* ButtonView.swift */,
+				FC21459E2CA4903500D222B1 /* SpecialistCardView.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		FCCD1F192CB7033400758A0B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FCCD1F1A2CB7041500758A0B /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC2145882CA48A9800D222B1 /* Medico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2145972CA48A9900D222B1 /* Build configuration list for PBXNativeTarget "Medico" */;
+			buildPhases = (
+				FC2145852CA48A9800D222B1 /* Sources */,
+				FC2145862CA48A9800D222B1 /* Frameworks */,
+				FC2145872CA48A9800D222B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medico;
+			productName = Medico;
+			productReference = FC2145892CA48A9800D222B1 /* Medico.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC2145812CA48A9800D222B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FC2145882CA48A9800D222B1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = FC2145842CA48A9800D222B1 /* Build configuration list for PBXProject "Medico" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC2145802CA48A9800D222B1;
+			productRefGroup = FC21458A2CA48A9800D222B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC2145882CA48A9800D222B1 /* Medico */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC2145872CA48A9800D222B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2145A32CA49D1400D222B1 /* doctor.json in Resources */,
+				FC2145942CA48A9900D222B1 /* Preview Assets.xcassets in Resources */,
+				FC2145912CA48A9900D222B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC2145852CA48A9800D222B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC21459B2CA48B1B00D222B1 /* HomeView.swift in Sources */,
+				FC21459F2CA4903500D222B1 /* SpecialistCardView.swift in Sources */,
+				FCCD1F1B2CB7041500758A0B /* WebService.swift in Sources */,
+				FCCD1F172CB6F68B00758A0B /* ButtonView.swift in Sources */,
+				FC21458F2CA48A9800D222B1 /* ContentView.swift in Sources */,
+				FC2145A12CA4970C00D222B1 /* Specialist.swift in Sources */,
+				FC21458D2CA48A9800D222B1 /* MedicoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC2145952CA48A9900D222B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC2145962CA48A9900D222B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC2145982CA48A9900D222B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medico/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cotuca.Medico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC2145992CA48A9900D222B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medico/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cotuca.Medico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC2145842CA48A9800D222B1 /* Build configuration list for PBXProject "Medico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2145952CA48A9900D222B1 /* Debug */,
+				FC2145962CA48A9900D222B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2145972CA48A9900D222B1 /* Build configuration list for PBXNativeTarget "Medico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2145982CA48A9900D222B1 /* Debug */,
+				FC2145992CA48A9900D222B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC2145812CA48A9800D222B1 /* Project object */;
+}
